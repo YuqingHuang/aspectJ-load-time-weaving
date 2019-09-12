@@ -11,7 +11,6 @@ public class DateTimeToStringAspectTest {
     public void testDateTimeToString() throws Exception {
         DateTime dateTime = new DateTime();
         System.out.println(dateTime.toString());
-        System.out.println(dateTime.getClass().getName());
-        assertThat(dateTime.toString(), is(DateTimeToStringAspect.TO_STRING_RESULT));
+        System.out.println(dateTime.toString("d MMMM, yyyy"));
     }
 }
